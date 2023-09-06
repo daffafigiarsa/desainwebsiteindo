@@ -2015,3 +2015,39 @@ input.check-toggle-round-flat:checked + label:after {
   color: #3F58DD;
 }
 
+
+
+.cs_section {
+  background: white;
+ 
+}
+
+.cs_section .container {
+  background: white;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cs_section .row {
+  background: #F7F7F7;
+  border-radius: 10px;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: scroll;
+}
+
+.dropdown-menu {
+  max-height: 280px;
+  overflow-y: auto;
+}
+

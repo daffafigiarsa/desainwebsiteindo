@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Select2 Dropdown</title>
+    
+    <!-- Include library Select2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Include Select2 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Membuat dropdown Select2 menjadi kotak scrollable */
+        .custom-select2-dropdown {
+            max-height: 200px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <select class="custom-select2-dropdown">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+        <!-- Tambahkan lebih banyak pilihan sesuai kebutuhan -->
+    </select>
+    
+    <script>
+        $(document).ready(function() {
+            // Inisialisasi Select2 dengan kelas CSS kustom
+            $('.custom-select2-dropdown').select2();
+        });
+    </script>
+</body>
+</html>
